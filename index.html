@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurso Interactivo - Capacitación STPS</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .unidad { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; }
+        .tema { margin-left: 20px; font-weight: bold; cursor: pointer; color: blue; }
+        .subtema { margin-left: 40px; display: none; }
+    </style>
+    <script>
+        function toggleSubtemas(id) {
+            var subtemas = document.getElementById(id);
+            if (subtemas.style.display === "none") {
+                subtemas.style.display = "block";
+            } else {
+                subtemas.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Recurso Interactivo - Capacitación STPS</h1>
+    
+    <div class="unidad">
+        <h2>Unidad 1: Atención al Cliente y Manejo de Quejas</h2>
+        <div class="tema" onclick="toggleSubtemas('tema1.1')">1.1 Protocolos de Recepción de Quejas y Denuncias</div>
+        <div id="tema1.1" class="subtema">
+            <div>1.1.1 Normativas y derechos del consumidor</div>
+            <div>1.1.2 Uso de herramientas digitales para gestión de quejas</div>
+            <div>1.1.3 Empatía y escucha activa en la resolución de conflictos</div>
+        </div>
+    </div>
+
+    <div class="unidad">
+        <h2>Unidad 2: Relación Calidad-Precio</h2>
+        <div class="tema" onclick="toggleSubtemas('tema2.1')">2.1 Estrategias para Mejorar la Percepción de Calidad-Precio</div>
+        <div id="tema2.1" class="subtema">
+            <div>2.1.1 Argumentación de valor basada en beneficios del producto</div>
+            <div>2.1.2 Diferenciación de productos frente a la competencia</div>
+            <div>2.1.3 Psicología del consumidor y percepción de precios</div>
+            <div>2.1.4 Estrategias de venta consultiva</div>
+        </div>
+    </div>
+
+    <div class="unidad">
+        <h2>Unidad 3: Rapidez en la Atención en la Tienda</h2>
+        <div class="tema" onclick="toggleSubtemas('tema3.1')">3.1 Optimización de Procesos de Atención en Tienda</div>
+        <div id="tema3.1" class="subtema">
+            <div>3.1.1 Mapeo de flujo de atención al cliente</div>
+            <div>3.1.2 Técnicas de atención ágil sin perder calidad</div>
+            <div>3.1.3 Implementación de tecnología para mejorar la experiencia del cliente</div>
+            <div>3.1.4 Identificación de cuellos de botella en la atención</div>
+        </div>
+        
+        <div class="tema" onclick="toggleSubtemas('tema3.2')">3.2 Comunicación Efectiva con el Cliente</div>
+        <div id="tema3.2" class="subtema">
+            <div>3.2.1 Lenguaje verbal y no verbal en la atención al cliente</div>
+            <div>3.2.2 Manejo de objeciones de manera efectiva</div>
+            <div>3.2.3 Desarrollo de una comunicación clara y concisa</div>
+            <div>3.2.4 Técnicas para generar confianza y fidelización</div>
+        </div>
+        
+        <div class="tema" onclick="toggleSubtemas('tema3.3')">3.3 Técnicas para la Gestión del Tiempo en el Punto de Venta</div>
+        <div id="tema3.3" class="subtema">
+            <div>3.3.1 Métodos para priorizar tareas en momentos de alta demanda</div>
+            <div>3.3.2 Técnicas de eficiencia operativa en atención al cliente</div>
+            <div>3.3.3 Reducción de tiempos muertos y mejora del flujo de trabajo</div>
+            <div>3.3.4 Uso de checklists y herramientas digitales para organización del equipo</div>
+        </div>
+    </div>
+</body>
+</html>
